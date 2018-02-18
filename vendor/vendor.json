@@ -38,6 +38,18 @@
 			"revisionTime": "2016-02-02T21:14:36Z"
 		},
 		{
+			"checksumSHA1": "KMTpIQS+cdSCzMN5TC6GfNLTv0o=",
+			"path": "github.com/ant0ine/go-json-rest/rest",
+			"revision": "ebb33769ae013bd5f518a8bac348c310dea768b8",
+			"revisionTime": "2017-09-13T04:12:08Z"
+		},
+		{
+			"checksumSHA1": "sXuwczp4nGdlq20zJoGHmA8IYPg=",
+			"path": "github.com/ant0ine/go-json-rest/rest/trie",
+			"revision": "ebb33769ae013bd5f518a8bac348c310dea768b8",
+			"revisionTime": "2017-09-13T04:12:08Z"
+		},
+		{
 			"checksumSHA1": "ee+RzBQdT5behEG2sHryd1XgyIg=",
 			"comment": "v1.6.0-17-g69ad631",
 			"path": "github.com/bmatsuo/lmdb-go/internal/lmdbarch",
