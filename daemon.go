@@ -58,6 +58,12 @@ func (d *menderDaemon) shouldStop() bool {
 }
 
 func (d *menderDaemon) Run() error {
+	api := NewAPI(d.mender)
+	go func() {
+		err := api.Run()
+		log.Errorf("failed to initialize api server: %v", err)
+	}()
+
 	// set the first state transition
 	var toState State = d.mender.GetCurrentState()
 	cancelled := false
