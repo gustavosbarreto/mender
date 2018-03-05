@@ -74,7 +74,11 @@ func (d *menderDaemon) Run() error {
 				return errors.New("failed")
 			}
 		}
-		if cancelled || toState.Id() == MenderStateDone {
+		if cancelled {
+			toState = d.mender.GetCurrentState()
+			continue
+		}
+		if toState.Id() == MenderStateDone {
 			break
 		}
 		if d.shouldStop() {
